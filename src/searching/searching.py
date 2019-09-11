@@ -27,9 +27,6 @@ def binary_search(arr, target):
         return arr.index(target)
   else:
     for i in range(low,high):
-      if(len(newArr)==1):
-        if(target == newArr[0]):
-          return arr.index(target)
       middle = int((len(newArr))/2)
       low = 0
       high = len(newArr)-1
@@ -69,10 +66,6 @@ def binary_search_recursive(arr, target, low, high):
       return bin1.index(target)
 
   else:
-
-    if(len(arr)==1):
-      if(target == arr[0]):
-        return bin1.index(target)
 
     if target == arr[middle]:
       return bin1.index(target)
